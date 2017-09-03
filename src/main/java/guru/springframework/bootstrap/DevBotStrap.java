@@ -1,9 +1,6 @@
 package guru.springframework.bootstrap;
 
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
-
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -19,7 +16,6 @@ import guru.springframework.domain.Notes;
 import guru.springframework.domain.Recipe;
 import guru.springframework.domain.UnitOfMeasure;
 import guru.springframework.repositories.CategoryRepository;
-import guru.springframework.repositories.IngredientRepository;
 import guru.springframework.repositories.RecipeRepository;
 import guru.springframework.repositories.UnitOfMeasureRepository;
 @Component

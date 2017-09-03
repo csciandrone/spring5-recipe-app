@@ -35,7 +35,7 @@ public class IndexController {
 		Optional<UnitOfMeasure> unitOfMeasureOptional = unitOfMeasureRepository.findByDescription("Teaspoon");
 		System.out.println("Cat id is "+categoryOptional.get().getId());
 		System.out.println("UEM id is "+unitOfMeasureOptional.get().getId());
-		model.addAttribute("lista", recipeService.getRecipeesList());
+		model.addAttribute("recipesList", recipeService.getRecipeesList());
 		
 		return "index";
 	}

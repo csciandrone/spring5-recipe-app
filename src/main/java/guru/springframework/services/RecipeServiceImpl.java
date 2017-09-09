@@ -3,6 +3,7 @@ package guru.springframework.services;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -31,6 +32,11 @@ public class RecipeServiceImpl implements RecipeService {
 			retList.add(iterator.next());
 		}
 		return retList;
+	}
+	
+	public Recipe findById(Long id){
+		Optional<Recipe> recipeFounded = recipeRepository.findById(id);
+		return recipeFounded.isPresent()?recipeFounded.get():null;
 	}
 
 }
